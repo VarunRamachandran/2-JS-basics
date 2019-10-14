@@ -1,27 +1,21 @@
-// var firstName = "Varun";
-// console.log(firstName);
+var now, yearJohn, yearMark;
+now = 2018;
+ageJhon = 28;
+ageMark = 30;
 
-// var lastName = "Ramachandran";
-// var age = 29;
-// var fullAge = true;
-// console.log(fullAge);
+yearJohn = now - ageJhon;
+yearMark = now - ageMark;
 
-// var job;
-// console.log(job);
+console.log(yearJohn);
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 10);
 
-// job = "teacher";
-// console.log(job);
-// //this the comment
-// var $3years = 3;
-// console.log($3years);
+var johnOlder = ageJhon < ageMark;
+console.log(johnOlder);
 
-var firstName = "Varun";
-var age = 29;
-console.log(firstName + " " + age);
-
-var job, isMarried;
-job = "driver";
-isMarried = false;
-alert(firstName + " " + "is a" + age + "year old" + job + ".Is he married?" + isMarried);
-var lastName = prompt("what is your last name");
-console.log(firstName + " " + lastName);
+console.log(typeof johnOlder);
+console.log(typeof ageJhon);
+console.log(typeof " mamamamam");
+var x;
+console.log(typeof x);
