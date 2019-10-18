@@ -1,21 +1,19 @@
-var now, yearJohn, yearMark;
-now = 2018;
-ageJhon = 28;
-ageMark = 30;
+var now = 2018;
+var yearJhon = 1989;
+var fullAge = 18;
 
-yearJohn = now - ageJhon;
-yearMark = now - ageMark;
+//Multiple Operators
+var fullAge = now - yearJhon >= fullAge;
+console.log(fullAge);
 
-console.log(yearJohn);
-console.log(now + 2);
-console.log(now * 2);
-console.log(now / 10);
+//Grouping
+var ageJhon = now - yearJhon;
+var ageMark = 35;
+var avg = (ageJhon + ageMark) / 2;
+console.log("avg" + avg);
 
-var johnOlder = ageJhon < ageMark;
-console.log(johnOlder);
-
-console.log(typeof johnOlder);
-console.log(typeof ageJhon);
-console.log(typeof " mamamamam");
-var x;
-console.log(typeof x);
+// Multiple Assignemnt
+var x, y;
+x = y = (3 + 5) * 4 - 6;
+console.log(x);
+//x = x * 2   is the same as x *= 2;
