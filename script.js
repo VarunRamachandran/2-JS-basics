@@ -1,22 +1,18 @@
-// var now = 2018;
-// var yearJhon = 1989;
-// var fullAge = 18;
+var firstName = "jhon";
+var civilStatus = "single";
 
-// //Multiple Operators
-// var fullAge = now - yearJhon >= fullAge;
-// console.log(fullAge);
+if (civilStatus === "married") {
+  console.log(firstName + " " + "is married");
+} else {
+  console.log(firstName + " will hopefully marry soon:}");
+}
 
-// //Grouping
-// var ageJhon = now - yearJhon;
-// var ageMark = 35;
-// var avg = (ageJhon + ageMark) / 2;
-// console.log("avg" + avg);
-
-// // Multiple Assignemnt
-// var x, y;
-// x = y = (3 + 5) * 4 - 6;
-// console.log(x);
-// //x = x * 2   is the same as x *= 2;
+var isMarried = true;
+if (isMarried === true) {
+  console.log(firstName + " " + "is married");
+} else {
+  console.log(firstName + " will hopefully marry soon:}");
+}
 
 let markMass = 40;
 let markHeight = 1.7;
@@ -29,3 +25,9 @@ console.log(markBmi, jhonBmi);
 
 var greaterBmi = markBmi > jhonBmi;
 console.log("Is Mark's age greater than jhon " + " " + greaterBmi);
+
+if (markBmi > jhonBmi) {
+  console.log("Mark's Bmi is greater");
+} else {
+  console.log("Jhon's Bmi is greater");
+}
