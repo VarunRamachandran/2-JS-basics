@@ -1,22 +1,19 @@
-function claculateAge(birthYear) {
-  return 2018 - birthYear;
-}
+//Function Decleration
 
-var ageJhon = claculateAge(1990);
-var ageJane = claculateAge(1940);
-var ageMike = claculateAge(1930);
-console.log(ageJhon, ageJane, ageMike);
-
-function yearsUntilRetirement(year, firstName) {
-  var age = claculateAge(year);
-  var retirement = 65 - age;
-  if (retirement > 0) {
-    console.log(firstName + " retires in" + "  " + retirement + "years");
-  } else {
-    console.log(firstName + " is already retired");
+//Function expresion
+var whatDoYouDo = function(job, firstName) {
+  switch (job) {
+    case "teacher":
+      return firstName + " teaches kids how to code";
+    case "driver":
+      return firstName + " divers a cab in lisbon";
+    case "designer":
+      return firstName + " designs beautiful websites";
+    default:
+      return firstName + " does something else";
   }
-}
+};
 
-yearsUntilRetirement(1990, "Jhon");
-yearsUntilRetirement(1930, "MIke");
-yearsUntilRetirement(1950, "Jane");
+console.log(whatDoYouDo("teacher", "Jhon"));
+console.log(whatDoYouDo("designer", "Jane"));
+console.log(whatDoYouDo("retired", "Mark"));
