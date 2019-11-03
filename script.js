@@ -25,10 +25,9 @@ var jhonTip = [];
 var JhonTotal = [];
 
 function tipCalculator(amount) {
-  // var tip = 0;
   if (amount < 50) {
     return 0.2;
-  } else if (amount >= 50 && amount <= 200) {
+  } else if (amount >= 50 && amount < 200) {
     return 0.15;
   } else if (amount > 200) {
     return 0.1;
@@ -36,7 +35,7 @@ function tipCalculator(amount) {
 }
 
 function totalCalculator(amount) {
-  return tipCalculator(amount) * amount;
+  return tipCalculator(amount) * amount + amount;
 }
 
 jhonTip.push(tipCalculator(124), tipCalculator(48), tipCalculator(268));
