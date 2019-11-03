@@ -1,44 +1,24 @@
-// //Function Decleration
+var jhon = {
+  firstNmae: "Jhon",
+  lastName: "Smith",
+  birthYear: 1990,
+  family: ["Jane", "Mark", "Bob", "Emily"],
+  job: "Teacher",
+  isMarried: false
+};
 
-// //Function expresion
-// var names = ["Jhon", "Jane", "Mark"];
-// var years = new Array(1990, 1969, 1948);
-// console.log(names);
-// console.log(names.length);
+console.log(jhon.firstNmae);
+console.log(jhon["lastName"]);
+var x = "birthYear";
+console.log(jhon[x]);
 
-// names[1] = "Ben";
-// names[5] = "Mary";
-// names[names.length] = "Amy";
-// console.log(names);
+jhon.job = "designer";
+jhon["isMarried"] = true;
 
-// var jhon = ["Jhon", "Smith", 1990, "designer", false];
+console.log(jhon);
 
-// jhon.push("blue");
-// jhon.unshift("Mr.");
-// jhon.pop();
-// jhon.pop();
-// jhon.shift();
-// var isDesigner = jhon.indexOf("designer") === -1 ? "Jhon is NOT a designer" : "Jhon IS a designer";
-// console.log(isDesigner);
-
-var jhonTip = [];
-var JhonTotal = [];
-
-function tipCalculator(amount) {
-  if (amount < 50) {
-    return 0.2;
-  } else if (amount >= 50 && amount < 200) {
-    return 0.15;
-  } else if (amount > 200) {
-    return 0.1;
-  }
-}
-
-function totalCalculator(amount) {
-  return tipCalculator(amount) * amount + amount;
-}
-
-jhonTip.push(tipCalculator(124), tipCalculator(48), tipCalculator(268));
-console.log(jhonTip);
-JhonTotal.push(totalCalculator(124), totalCalculator(48), totalCalculator(268));
-console.log(JhonTotal);
+var jane = new Object();
+jane.name = "Jane";
+jane.birthYear = 1969;
+jane["lastName"] = "Smith";
+console.log(jane);
