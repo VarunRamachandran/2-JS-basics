@@ -1,24 +1,25 @@
 var jhon = {
-  firstNmae: "Jhon",
-  lastName: "Smith",
-  birthYear: 1990,
-  family: ["Jane", "Mark", "Bob", "Emily"],
-  job: "Teacher",
-  isMarried: false
+  fullName: "Jhon Pane",
+  mass: 120,
+  height: 1.72,
+  bmi: function() {
+    return (this.mass / this.height) * 2;
+  }
 };
 
-console.log(jhon.firstNmae);
-console.log(jhon["lastName"]);
-var x = "birthYear";
-console.log(jhon[x]);
+var mark = {
+  fullName: "Mark Daluca",
+  mass: 130,
+  height: 1.92,
+  bmi: function() {
+    return (this.mass / this.height) * 2;
+  }
+};
 
-jhon.job = "designer";
-jhon["isMarried"] = true;
-
-console.log(jhon);
-
-var jane = new Object();
-jane.name = "Jane";
-jane.birthYear = 1969;
-jane["lastName"] = "Smith";
-console.log(jane);
+if (jhon.bmi > mark.bmi) {
+  console.log(jhon.fullName + " has higher BMI with" + jhon.bmi);
+} else if (jhon.bmi < mark.bmi) {
+  console.log(mark.fullName + " has higher BMI with" + mark.bmi);
+} else {
+  console.log(jhon.fullName + " and " + mark.fullName + " have the same BMI");
+}
