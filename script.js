@@ -1,25 +1,19 @@
-var jhon = {
-  fullName: "Jhon Pane",
-  mass: 120,
-  height: 1.72,
-  bmi: function() {
-    return (this.mass / this.height) * 2;
-  }
-};
+for (var i = 1; i <= 20; i += 2) {
+  console.log(i);
+}
 
-var mark = {
-  fullName: "Mark Daluca",
-  mass: 130,
-  height: 1.92,
-  bmi: function() {
-    return (this.mass / this.height) * 2;
-  }
-};
+var jhon = ["Jhon", "Smith", 1990, "designer", false, "blue"];
+for (var i = 0; i < jhon.length; i++) {
+  if (typeof jhon[i] !== "string") break;
+  console.log(jhon[i]);
+}
 
-if (jhon.bmi > mark.bmi) {
-  console.log(jhon.fullName + " has higher BMI with" + jhon.bmi);
-} else if (jhon.bmi < mark.bmi) {
-  console.log(mark.fullName + " has higher BMI with" + mark.bmi);
-} else {
-  console.log(jhon.fullName + " and " + mark.fullName + " have the same BMI");
+var i = 0;
+while (i < jhon.length) {
+  console.log(jhon[i]);
+  i++;
+}
+
+for (var i = jhon.length - 1; i >= 0; i--) {
+  console.log(jhon[i]);
 }
