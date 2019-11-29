@@ -67,7 +67,13 @@ function markAvgTip() {
   }
   markAvgFinal = markAvg / mark.marktip.length;
 }
-JhonAvgTip();
-markAvgTip();
+jhon.average = JhonAvgTip();
+mark.average = markAvgTip();
 console.log(jhonAvgFinal);
 console.log(markAvgFinal);
+
+if (jhon.average > mark.average) {
+  console.log("Jhon's family pays higher");
+} else {
+  console.log("Mark's family pays higher");
+}
